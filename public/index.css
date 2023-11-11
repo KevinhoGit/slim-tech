@@ -9,6 +9,26 @@
     text-decoration: none;
     list-style: none;
     color: var(--txt-color);
+    outline: none;
+    font-family: sans-serif;
+    
+}
+
+input
+{
+    font-size: 0.6rem;
+    
+}
+p
+{
+    font-size: 0.8rem;
+    line-height: 1.2rem; /* 176.471% */
+
+}
+h1
+{
+    font-family: sans-serif;
+    text-transform: uppercase;
     
 }
 :root
@@ -16,6 +36,7 @@
     --txt-color: #ffffff;
     --fundo-color:#000000;
     --nav-color: #1F1F1F;
+    --elementos-color: #1F1F1F;
 }
 body{
     background-color: var(--fundo-color);
@@ -74,6 +95,7 @@ nav
 {
     
     padding-bottom: 34px;
+    
 
 }
 
@@ -98,7 +120,7 @@ nav
 {
     color: var(--txt-color);
     font-family: 'DM Sans', sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 800;
     line-height: 1.3; /* 116.667% */
@@ -186,12 +208,9 @@ nav
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #0994CF  ;
-    padding: 0 12%;
-    
+    border: #0994CF ;
     height: auto;
-    padding-left: 12%;
-    padding-right: 12%;
+   
 }
 .txt-ti
 {
@@ -201,20 +220,21 @@ nav
 .txt-ti h1
 {
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 25px;
+    padding-top: 60px;
+    padding-bottom: 10px;
     
 }
-.box-barra .barra
+.box-barra
 {
-    margin-bottom: 70px;
+    padding-bottom: 50px;
 }
+
 .servicos .delivery
 {
     
     height: 400px;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: var(--elementos-color);
 }
 .delivery img
 {
@@ -226,10 +246,12 @@ nav
     width: 100%;
     padding: 0 6%;
 }
+
+
 .delivery
 {
     display: flex;
-    align-items: center;
+    
     text-align: center;
     border-radius: 10px;
    
@@ -243,9 +265,17 @@ nav
     font-size: 38px;
     font-style: normal;
     font-weight: 800;
-    /* 116.667% */
-    letter-spacing: 2.04px;
-    margin-bottom: 20px;
+   
+    
+    
+}
+.box-txt p
+{
+    color: var(--txt-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+   
+    
     
 }
 .delivery-txt
@@ -258,7 +288,7 @@ nav
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
-    letter-spacing: -0.16px;
+    
     
     
 }
@@ -303,7 +333,7 @@ section
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .cardd
@@ -336,8 +366,23 @@ section
 .card-content p 
 {
     text-align: center;
-    padding: 20px 0px;
     
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;     /* fallback */
+      /* fallback */
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    
+    
+  
+    padding: 20px 6px;
+    
+}
+.crd
+{
+    padding-top: 30px;
 }
 .card-content button
 {
@@ -347,6 +392,7 @@ section
     border: 1px solid #0994CF;
     background-color: transparent;
     color: #000000;
+
 }
 
 .card-content button:hover
@@ -389,18 +435,19 @@ section
 }
 .loja-content
 {
-    padding-left: 30px;
+    padding: 0px 30px;
     
 }
 
 .loja-content h1, p
 {
     color: #ffffff;
+    
    
 }
 .loja-content h1
 {
-    padding-top: 30px;
+    padding-top: 5px;
    
 }
 .loja-card .btn
@@ -429,76 +476,295 @@ section
     
 
 }
-.loja-card .btn .btnnn:hover
-{
-    border-radius: 4px;
-    border: 0px solid #564E4E;
-    background: #0994CF;
-    cursor: pointer;
 
-}
-.loja-container
+.contato
 {
+    padding-bottom: 50px;
+}
+.contato .card
+{
+    
+    padding: 0 50px;
+    padding-right: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 100px;
+    height: 600px;
+    background-color: var(--elementos-color);
+    
 }
-.lojas
+.message-box textarea
 {
-    height: auto;
+    width: 400px;
+    height: 130px;
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    padding: 1.2rem 1.2rem;
 }
-
-.loja-txt
+.whatsapp
 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 0.0625rem solid #0994CF;
+    box-shadow: 0rem 0rem 2.5rem rgba(6,247,132,.16);
+    display: flex;
+    align-items: center;
     text-align: center;
+    
+    cursor: pointer;
 }
-
-.loja-input .input-caixa
+.whatsapp .content .txt
 {
     padding: 20px 0;
+    
 }
-.loja-txt
+.whatsapp .content
 {
-    padding: 50px 0;
+    padding: 0px 6px;
+    
 }
-.loja-input input
+.whatsapp .content .number
 {
-    font-size: 15px;
-    display: inline-block;
-    box-sizing: border-box;
-    color: #000;
-    background-color: transparent;
+    
+    color: #0994CF;
 }
 
-input[type="cep"]
+.whatsapp .content i
 {
-    background-color: #ffffff;
-    width: 270px;
-    height: 30px;
-    padding: 0 10px ;
+    color: #0994CF;
+}
+.inp{
+    display: flex;
+}
+.inp .ip2, .inp p{
+   margin-left: 1rem; 
+   
+}
+.lado-direito input:focus {
+    border-bottom: 1px solid #0994CF;
+    
+ }
+ textarea:focus
+ {
+    border-bottom: 1px solid #0994CF;
+ }
+
+.e-mail p{
+    margin-left: 1rem; 
+ }
+ .message-box p
+ {
+    margin-left: 1rem;
+ }
+ 
+
+.inp input, .e-mail input
+{
+    padding: 0.8rem 1rem;
+    background-color: transparent;
+    
+    
+}
+.e-mail input{
+    width: 400px;
+    
+}
+.lado-direito input, textarea
+{
     border: none;
-    outline: none;
-    border: solid 1.5px #0994CF ;
-    border-radius: 0px 0 0 8px;
+    border-bottom: solid 1px #000;
+}
+.lado-direito button
+{
+    height: 24px;
+    width: 130px;
+    background-color: #0994CF;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.s button 
+{
+   font-size: 10px
+}
+.s
+{
+    padding-top: 30px;
+}
+footer
+{
+    padding: 0 12%;
+}
+li button
+{
+    background-color: #0994CF/*#07e079*/;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    
+    cursor: pointer;
+    width: 149px;
+    height: 22px;
+}
+button span
+{
+    font-size: 10px;
+    padding-left: 4px;
+}
+.footer-wrapper
+{
+    display: flex;
+    justify-content: space-between;
     
 }
 
-input[type="submit"]
+.footer-wrapper ul li 
 {
-    border-radius: 0 8px 0px 0;
-    width: 110px;
+    padding-top: 5px;
+}
+.footer{
+    padding-bottom: 10px;
+    
+}
+.footer--faixa{
+    margin-top: 80px;
+    width: 100%;
     height: 30px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background-color: #0994CF;
-    margin-left: -10px;
+    background-color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+li img
+{
+    width: 80px;
 }
 
-.contato .card
+.contato h1
 {
-    width: 100%;
-    height: 400px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.cursor
+{
+    color: #BABCBE;
+
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: -0.16px;
+}
+.footer h3
+{
+    color: #E7E7E7;
+
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: -0.16px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #0994CF;
+}
+
+
+/*sobre*/
+
+
+.sobre-img img
+{
+    width: 400px;
+    height: auto;
+	display: block;
+	object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+.container-sobre 
+{
+    background-color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+.sobre-content
+{
+    padding: 0 20px;
+    text-align: center;
+}
+.sobre-content p
+{
+    padding: 10px 0;
+    line-height: 24px; /* 150% */
+
+    text-align: left;
+    
+}
+.sobre
+{
+    padding-top: 50px;
+}
+
+.sobre h1
+{
+    
+    text-align: center;
+}
+.sobre-content button
+{
+    
+    border-radius: 4px;
+    width: 120px;
+    border: solid 2px #0994CF;
+    height: 26px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.sobre-content button:hover
+{
     background-color: #0994CF;
+}
+.btn-sla
+{
+    display: flex;
+    right: 0px;
+}
+.sobre .box-barra
+{
+    padding-top: 10px;
+}
+.container-sobre
+{
+    border-radius: 10px;
+}
+.whatsapp
+{
+    border-radius: 10px;
+}
+
+.contato-card
+{
+    border-radius: 10px;
+}
+
+textarea
+{
+    font-size: 10px;
+}
+.sobre-content h1
+{
+    display: flex;
+    left: 0;
 }

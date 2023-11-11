@@ -1,43 +1,46 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-   
+
     <script src="https://kit.fontawesome.com/263524155e.js" crossorigin="anonymous"></script>
     <title>Document</title>
- </head>
- <body>
+</head>
+
+<body>
     <header class="sty">
         <nav class="navbar">
             <div class="logo"><a href=""><img src="img/logo.svg" alt=""></a></div>
-            <div class="nav-link">   
+            <div class="nav-link">
                 <ul class="links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Lojas</a></li>
-                    <li><a href="">Servicos</a></li>
-                    <li><a href="">Contato</a></li>
-                
-            </ul>
-        
-        </div>
-         
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#servicos">Servicos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+
+                </ul>
+
+            </div>
+
         </nav>
     </header>
-        <!-- criando sections dos slogan do site, botões e parágrafos -->
-    <section class="home">   
+    <!-- criando sections dos slogan do site, botões e parágrafos -->
+    <section id="home" class="home">
         <div class="home-txt">
             <h1>Consertando o que <br> você precisa</h1>
             <p>
-                Na nossa assistência técnica, transformamos problemas em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia, nossa expertise
+                Na nossa assistência técnica, transformamos problemas em soluções, garantindo que cada dispositivo
+                funcione como novo. Sua tecnologia, nossa expertise
             </p>
             <div class="main-btn">
-                <button href="" class="btn1">quem somos</button>
-                <button href="" class="btn2">Entrar em contato</button>
+                <button href="" class="btn1"><a href="">Quem somos</a></button>
+                <button href="" class="btn2"><a href="#contato">Entrar em contato</a></button>
             </div>
-            
-        </div>    
+
+        </div>
         <div class="home-img">
             <img src="img/assitencia.svg" alt="">
         </div>
@@ -49,157 +52,240 @@
         <img src="img/home-p-1.svg" alt="">
         <img src="img/home-p-2.svg" alt="">
 
-    </section> 
-    
-    
+    </section>
 
 
-    
-        <section class="servicos">
-             <div class="txt-ti">
-            <h1 >CONHEÇA NOSSOS SERVIÇOS</h1>
-            <div class="box-barra"><div class="barra"></div></div>
-        
-        <div class="clouse">
-            <div class="delivery">
-                <img src="img/delivery-pp.svg" alt="">
-                <div class="container">
-                    <div class="box-txt">
-                        <h1>slim tech express</h1>
-                        <span class="delivery-txt">Oferecendo mais comodidade pra você: Nós retiramos o seu smartphone no lugar que precisar e devolvemos o seu aparelho por um motoboy autorizado.</span>
-                        
-                   
+    <section id="sobre-nos" class="sobre">
+        <h1>sobre nos</h1>
+        <div class="box-barra">
+            <div class="barra"></div>
+        </div>
+        <div class="container-sobre">
+            <div class="sobre-img">
+                <img src="img/sobre.avif" alt="">
+            </div>
+            <div class="sobre-content">
+                <h1>o que fazemos?</h1>
+                <p>A Tec Sênior se destaca como uma alternativa confiável no
+                    mercado de reparo de celulares em Santana e região. Com um compromisso inabalável com a qualidade,
+                    preços justos e prazos de entrega ágeis, a empresa está posicionada para se tornar a escolha
+                    preferida dos clientes que
+                    buscam não apenas reparos.</p>
+                <div class="btn-sla">
+                    <button>leia mais</button>
+
                 </div>
-                <button class="delivery-btn">saiba mais</button>
+
+
+
             </div>
         </div>
 
 
-        <div class="card-container">
-            <div class="cardd">
-                <img src="img/troca.svg" alt="">
-                <div class="card-content">
-                    <h2>Troca de Tela</h2>
-                    <p>Trocamos o seu display ou somente o vidro do seu dispositivo. Você sabia que trocando somente o vidro poderá economizar até 60% do seu conserto? Conheça nossas condições </p>
-                    <button><a href=""> saiba mais</a></button>
-                </div>
+
+    </section>
+
+
+    <section id="servicos" class="servicos">
+        <div class="txt-ti">
+            <h1>CONHEÇA NOSSOS SERVIÇOS</h1>
+            <div class="box-barra">
+                <div class="barra"></div>
             </div>
-            <div class="cardd">
-                <img src="img/ipnhone.svg" alt="">
-                <div class="card-content">
-                    <h2>Reparos em Placas de Iphone</h2>
-                    <p>Contamos com uma equipe altamente qualificada de técnicos especializados em reparo de placas de iPhone. Nossa experiência garante a identificação precisa e a resolução eficiente de uma ampla gama de problemas.
 
-                    </p>
-                    <button><a href=""> saiba mais</a></button>
-                </div>
-            </div>
-            
-                
-                
-         </div>
-
-         <div class="card-container">
-            <div class="cardd">
-                <img src="img/troca.svg" alt="">
-                <div class="card-content">
-                    <h2>Troca de Tela</h2>
-                    <p>Trocamos o seu display ou somente o vidro do seu dispositivo. Você sabia que trocando somente o vidro poderá economizar até 60% do seu conserto? Conheça nossas condições </p>
-                    <button><a href=""> saiba mais</a></button>
-                </div>
-            </div>
-            <div class="cardd">
-                <img src="img/ipnhone.svg" alt="">
-                <div class="card-content">
-                    <h2>Reparos em Placas de Iphone</h2>
-                    <p>Contamos com uma equipe altamente qualificada de técnicos especializados em reparo de placas de iPhone. Nossa experiência garante a identificação precisa e a resolução eficiente de uma ampla gama de problemas.
-
-                    </p>
-                    <button><a href=""> saiba mais</a></button>
-                </div>
-            </div>
-            
-                
-                
-         </div>
-       
-        </section>
-        <section class="lojas">
-
-            <div class="loja-box">
-                <div class="loja-txt">
-                    <h1>busque a loja mais perto de vc</h1>
-                </div>
-                <div class="loja-input">
-                    <div><h1>digite seu cep</h1></div>
-                    <div class="input-caixa">
-                        <input type="cep" placeholder="digite seu cep">
-                        <input type="submit" name="" value="pesquisar">
-                    </div>
-                </div>
-
-            <div class="loja-container">
-
-                
-    
-                    <div class="loja-card">
-                        <div class="loja-endereco">grajau</div>
-                        <div class="loja-content">
-                            <h1>endereco:</h1>
-                            <p>Reparos em Placas de Iphone</p>
-
-                            <h1>endereco:</h1>
-                            <p>Reparos em Placas de Iphone</p>
-
-                            <h1>endereco:</h1>
-                            <p>Reparos em Placas de Iphone</p>
-
+            <div class="cl-j">
+                <div class="delivery">
+                    <img src="img/delivery-pp.svg" alt="">
+                    <div class="container">
+                        <div class="box-txt">
+                            <h1>slim tech express</h1>
+                            <p class="delivery-txt">Oferecendo mais comodidade pra você: Nós
+                                retiramos o seu smartphone
+                                no lugar que precisar e devolvemos o seu aparelho por um motoboy autorizado.</p>
+                            <div><button class="delivery-btn">saiba mais</button></div>
 
                         </div>
-                        <div class="btn"><button class="btnnn">Entrar em contato</button></div>
+
                     </div>
+                </div>
 
 
-                    
-                    <div class="loja-card">
-                        <div class="loja-endereco">grajau</div>
-                        <div class="loja-content">
-                            <h1>endereco:</h1>
-                            <p>Reparos em Placas de Iphone</p>
-
-                            <h1>endereco:</h1>
-                            <p>Reparos em Placas de Iphone</p>
-
-                            <h1>endereco:</h1>
-                            <p>Reparos em Placas de Iphone</p>
-
-
+                <div class="card-container">
+                    <div class="cardd">
+                        <img src="img/troca.svg" alt="">
+                        <div class="card-content">
+                            <h2>Troca de Tela</h2>
+                            <p>Trocamos o seu display ou somente o vidro do seu dispositivo.
+                                Você sabia que trocando somente o vidro poderá economizar
+                                até 60% do seu conserto? Conheça nossas condições </p>
+                            <div class="crd">
+                                <button><a href=""> saiba mais</a></button>
+                            </div>
                         </div>
-                        <div class="btn"><button class="btnnn">Entrar em contato</button></div>
                     </div>
+                    <div class="cardd">
+                        <img src="img/reparo.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Reparo em Placa </h2>
+                            <p>Somos especializados em reparos de placa de iPhone, seu aparelho não está ligando
+                                absolutamente nada? Não acende nenhum led? Ou mesmo liga mas não da imagem? É provável
+                                que seu smartphone ou tablet esteja com um problema na placa principal. Para ser
+                                resolvido esse problema você pode
+                                contar com nossa assistência, que temos o técnico especializado nesse assunto. </p>
+
+                            <div class="crd">
+                                <button><a href=""> saiba mais</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </div>
 
-                
-               
+                <div class="card-container">
+                    <div class="cardd">
+                        <img src="img/bateria.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Troca de bateria</h2>
+                            <p>Se a porcentagem da carga cai mais de 20% por hora mesmo
+                                com uso leve, ou se o carregamento nunca chega a 100% mesmo
+                                após horas na tomada, acenda o alerta da preocupação. O mesmo
+                                vale para uma queda repentina de 2% sem nenhum uso de aplicativo
+                                pesado.
+
+                            </p>
+                            <div class="crd">
+                                <button><a href=""> saiba mais</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd">
+                        <img src="img/desbloqueio.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Desbloqueio</h2>
+                            <p>Os profissionais da Tec Sênior estão aptos a realizar
+                                este serviço de assistência técnica em celulares de todas
+                                as marcas, desde que estejam acompanhados de sua nota fiscal.
+
+                                Entre em contato conosco para fazer seu orçamento sem compromisso.
+
+                            </p>
+                            <div class="crd">
+                                <button><a href=""> saiba mais</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+        <h1>contato</h1>
+        <div class="box-barra">
+            <div class="barra"></div>
+        </div>
+        <div class="contato-card card">
+
+
+
+            <div class="whatsapp">
+                <div class="content">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p class="txt">prefere entrar em contato conosco por whatsapp?</p>
+                    <p class="number"><i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+            </div>
+            <div class="lado-direito ">
+
+                <div class="sub">
+
+                    <div class="txt">
+                        envie-nos uma mensagem
+                    </div>
+                    <form action="#">
+
+                        <div class="inp s">
+                            <div class="ip1">
+                                <p>Nome:</p>
+                                <input type="text" placeholder="deigite seu nome">
+                            </div>
+                            <div class="ip2">
+                                <p>Telefone:</p>
+                                <input type="tel" placeholder="(xx) xxxxx-xxxx">
+                            </div>
+                        </div>
+                        <div class="e-mail s">
+                            <p>E-mail:</p>
+                            <input type="text" placeholder="deigite seu e-mail">
+                        </div>
+
+                        <div class="message-box s">
+                            <p>mensagem:</p>
+                            <textarea placeholder="escreva sua mensagem..."></textarea>
+
+                        </div>
+                        <div class="contato-btn s">
+                            <button><span><i class="fa-regular fa-paper-plane"></i></span> enviar mensagem</button>
+
+                        </div>
+                    </form>
+                </div>
+
             </div>
 
 
-
-        </section>
-
-        <section class="contato">
-            <h1>entre em contato</h1>
-            <div class="card">
-                 
-            </div>
+        </div>
 
 
 
-        </section>
-        <script src="index.js">
-            
-        </script>
-    
- </body>
- </html>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li class="logo"><img src="img/logo.svg" alt=""></li>
+            </ul>
+            <ul>
+                <li class="footer">
+                    <h3>mapa do site </h3>
+                </li>
+                <li><a class="cursor" href="">Home</a></li>
+                <li><a class="cursor" href="#sobre-nos">sobre nós</a></li>
+                <li><a class="cursor" href="">Servicos</a></li>
+                <li><a class="cursor" href="">Contato</a></li>
+            </ul>
+            <ul>
+                <li class="footer">
+                    <h3>redes sociais </h3>
+                </li>
+                <li><a class="cursor" href="">Linkedin</a></li>
+                <li><a class="cursor" href="">instagram</a></li>
+                <li><a class="cursor" href=""> facebook</a></li>
+            </ul>
+            <ul>
+                <li class="footer">
+                    <h3>contato </h3>
+                </li>
+                <li><button><i class="fa-brands fa-whatsapp"><span>whatsapp</span></i></button></li>
+
+            </ul>
+        </div>
+
+
+
+    </footer>
+    <div class="footer--faixa">
+        <p>© klds e truma <span class="ano"></span> - Todos os direitos reservados</p>
+    </div>
+    <script src="index.js">
+
+    </script>
+
+</body>
+
+</html>
