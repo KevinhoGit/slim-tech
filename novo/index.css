@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Poppins:wght@100&display=swap');
+
+
+
+
+/*padrao*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'DM Sans';
+    color: var(--text-color);
+    list-style: none;
+    
+    
+}
+
+:root
+{
+    --text-color: #ffffff;
+    --bg-color: #000;
+    --bnt-color: #0994CF;
+    --txt_faixa-color:#BABCBE;
+    --hover-color: #0994CF;
+    --withe-color: #ffffff;
+    --bdr-color: #0994CF ;
+    --faixa--color:#1F1F1F;;
+
+}
+ /*butao padrao*/button
+{
+    
+    width: 149px;
+    height: 29px;
+    background-color: var(--hover-color);  
+    border-radius: 8px;
+    cursor: pointer;
+        
+    
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body
+{
+    background-color: var(--bg-color);
+
+}
+
+
+/* menus responsivo*/
+#menu-icone
+{
+    font-size: 3.6rem;
+    display: none;
+}
+/*navegacao*/
+.header
+{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0PX 10%;
+    width: 100%;
+    height: 76px;
+    background: rgba(34,40,45,.5); 
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+}
+.activa:hover
+{
+    color: var(--hover-color);
+}
+.sty{
+    background-color: transparent;
+}
+.logo 
+{
+    margin-right: auto;
+}
+.logo img
+{
+    height: 50px;
+}
+.navegacao a 
+{
+    position: relative;
+    font-family: 'DM Sans';
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+.header button
+{
+    width: 149.6px;
+    height: 29px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: solid 2px var(--bdr-color);
+    font-family: 'DM Sans';
+    color: var(--text-color);
+    background-color: transparent;
+}
+header button:hover
+{
+    background-color: var(--hover-color);
+}
+
+
+
+/*home*/
+
+
+section
+{
+    min-height: 100vh;
+    padding: 10rem 10% 2rem;
+
+}
+
+.home-conteudo
+{
+    max-width: 50rem;
+    margin-right: auto;
+}
+.home
+{
+    display: flex;
+    align-items: center;
+}
+
+.home-conteudo h1
+{
+    font-size: 5.6rem;
+    font-weight: 700;
+
+}
+.home-conteudo p
+{
+    font-size: 1.6rem;
+}
+.home-conteudo .box-btn
+{
+    display: inline-flex;
+    
+}
+.home button
+{
+    margin: 2.5rem 1.5rem 0 0;
+}
+.home .flutuar
+{
+    background-color: transparent;
+    border: solid 2px var(--hover-color);
+    
+}
+.home .flutuar:hover
+{
+    background-color: var(--hover-color);
+
+}
+.home-btn .vazio:hover
+{
+    background-color:transparent;
+    border: solid 2px var(--hover-color);
+
+}
+
+.home-img img
+{
+    
+    width: 250px;
+    
+}
+
+
+/*faixa*/
+
+.faixa
+{
+    
+    min-height: 120px;
+    padding: 0rem 10% 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--faixa--color);
+    
+    
+    
+}
+
+.faixa-conteudo
+{
+
+    display: flex;
+    align-items: center;
+    
+    
+}
+.faixa-conteudo h3
+{
+    max-width: 100px;
+    margin-left: 3.5rem;
+    
+}
+.faixa svg
+{
+    width: 45px;
+    
+}
+
+/*servicos*/
+.services
+{
+    min-height: 0;
+    height: auto;
+}
+
+.services-container
+{
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    gap: 120px 50px;
+    margin: auto o;
+    height: 0%;
+   
+}
+.services-card
+{
+    
+    display: flex;
+    flex: 1  1 30rem; 
+    justify-content: center;
+   
+    height: 400px;
+    background-color: var(--withe-color);
+    border-radius: 20px;
+   border-bottom: solid 5px var(--hover-color);
+    transition: 0.9s;
+    
+}
+.services-img
+{
+
+    position: absolute;
+    margin-top: 20px;
+    width: 250px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: 0.9s;
+    
+}
+
+
+.services-img img
+{
+
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: solid 0px var(--hover-color);
+}
+
+
+.services-img
+{
+    
+    margin-top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgb(0, 0, 0);
+    
+}
+
+.heading
+{
+    font-size: 4.5rem;
+    font-family: 'DM Sans';
+    
+}
+
+.services h1
+{
+    padding-bottom: 13rem;
+    text-align: center;
+}
+
+.services-contentet
+{
+    
+   display: flex;
+   align-items: center;
+   text-align: center;
+   padding: 0 12%;
+}
+.services-contentet div
+{
+    
+   margin-top: 60px;
+}
+
+
+.services-contentet h2, p, a
+{
+    
+    color: #000;
+}
+.services-contentet p
+{
+    line-height: 1.5;
+}
+.services-contentet p
+{
+    padding: 10px 0px;
+}
+.services-contentet button
+{
+    border: solid 2px var(--hover-color);
+    background-color: transparent;
+    color: #000;
+}
+.services-contentet button:hover
+{
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+/* .services-contentet button
+{
+    background-color: transparent;
+ border: solid 2px var(--hover-color);
+ color: #000;
+} */
+/* .services-contentet button:hover
+{
+    background-color: var(--hover-color);
+    border: solid 2px var(--hover-color);
+    color: #ffffff;
+} */
+
+
+/* contato */
+
+
+.contato h2
+{
+    margin-bottom: 3rem;
+    text-align: center ;
+} 
+.contato form
+{
+    width: 70rem;
+    
+    
+    margin-bottom: 0rem;
+}
+.input-box
+{
+    display: flex;
+
+    
+}
+.contato form .input-box input,
+.contato form textarea
+{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    margin: 2rem 0 ;
+    border: none;
+    border-bottom: solid 2px #0994CF;
+
+}
+.contato-container
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+.contato-rede
+{
+    
+    margin-top: 50px;
+    max-height: 900px;
+    width: 100%;
+    
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contato-whatsapp-content p
+{
+    color: #ffffff;
+}
+.contato-rede div
+{
+    width: 100px;
+    border-radius: 10px;
+    border: solid 2px var(--hover-color);
+    cursor: pointer;
+    height: 100px;
+    background-color: transparent;
+}
+.contato button
+{
+    margin: 0 .7rem;
+    background-color: transparent;
+    border: solid 2px var(--hover-color);
+}
+.contato button:hover
+{
+   background-color: var(--hover-color);
+}                     
+textarea
+{
+    resize: none;
+    height: 200px;
+}
+
+
+/* footer */
+.footer{
+	
+    padding: 100px 10%;
+    
+}
+.row{
+	
+	flex-wrap: wrap;
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+
+    
+}
+ul{
+	list-style: none;
+}
+.footer-col
+{
+ flex: 1 1 1;
+}
+
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--bdr-color);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.roda-pe
+{
+    padding: 0 10%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--faixa--color);
+}
+.rdp-btn button
+{
+    width: 40px;
+}
+.rdp-txt p
+{
+    font-size: 1.6rem;
+}
+
+
+
+/* responsividade geral, menu, home... */
+
+

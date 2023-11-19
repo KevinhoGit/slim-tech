@@ -232,19 +232,25 @@ nav
 .servicos .delivery
 {
     
-    height: 400px;
+    max-height: 400px;
+
+
     width: 100%;
     background-color: var(--elementos-color);
 }
 .delivery img
 {
-    height: 400px;
+    
+    width: 400px;
     border-radius: 10px 0 0 10px;
 }
 .delivery .container
 {
     width: 100%;
-    padding: 0 6%;
+    padding: 0 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -256,6 +262,10 @@ nav
     border-radius: 10px;
    
     
+}
+.box-txt
+{
+    padding: 0 500px;
 }
 
 .box-txt h1
@@ -288,6 +298,7 @@ nav
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
+    
     
     
     
