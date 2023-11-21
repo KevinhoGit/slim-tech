@@ -5,20 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/263524155e.js" crossorigin="anonymous"></script>
+    <script src="https://use.fortawesome.com/1ce05b4b.js"></script>
+    <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d"
+  >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+    >
     <title>Document</title>
 </head>
 <body>
     <!--nav-->
     <header class="header sty">
-         <a href="#" class="logo"><img src="/public/img/logo.svg" alt=""></a>
+         <a href="#" class="logo"><img src="logo.svg" alt=""></a>
        
-        <nav class="navegacao">
+        <nav class="navegacao ">
             <a href="#home" class="activa">home</a>
             <a href="#sobre">gestao</a>
             <a href="servicos">servicos</a>
             <a href="contato">contato</a>
+           
         </nav>
         <button>Solicitar Orçamento</button>
+        <i class=""></i>
+        <i class="fa-solid fa-bars-sort " id="menu-icone"></i>
     </header>
 
     <!--home-->
@@ -29,7 +59,7 @@
 
             </p>
             <div class="home-btn">
-                <button class="vazio">quem somos</button><button class="flutuar">entra em contato</button>
+                <button class="vazio">Quem Somos</button>
                 
             </div>
         </div>
@@ -38,6 +68,15 @@
         </div>
         
     </section>
+
+
+
+
+    
+
+
+
+
 
     <section class="faixa">
         <div class="faixa-conteudo left">
@@ -67,23 +106,21 @@
 
     </section>
 
-   
 
     <section class="services">
-        <h1 class="heading">servicos</h1>
+       <h2 class="heading txt-1">serviços</h2>
         <div class="services-container">
 
             <div class="services-card">
                 <div class="services-img">
-                    <img src="/public/img/tetst.avif" alt="">
+                    <img src="tetst.avif" alt="">
                 </div>
                 <div class="services-contentet">
                     <div>
-                        <h2>celularrr</h2>
-                        <p>Na nossa assistência técnica, transformamos problemas
-                            em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
-                            em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
-                            em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
+                        <h2>MANUTENÇÃO CORRETIVA</h2>
+                        <p>Um pacote de serviços preventivos, que visa reduzir o
+                            valor gasto pelos clientes com manutenções corretivas,
+                             através de um plano de assistência mensal
                         </p>
                         <button>saiba mais</button>
                     </div>
@@ -91,15 +128,14 @@
             </div>    
             <div class="services-card">
                 <div class="services-img">
-                    <img src="/public/img/tetst.avif" alt="">
+                    <img src="tetst.avif" alt="">
                 </div>
                 <div class="services-contentet">
                     <div>
-                        <h2>celularrr</h2>
-                        <p>Na nossa assistência técnica, transformamos problemas
-                            em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
-                            em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
-                            em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
+                        <h2>MANUTENÇÃO PREVENTIVA </h2>
+                        <p>Um pacote de serviços preventivos, que visa reduzir o
+                             valor gasto pelos clientes com manutenções corretivas,
+                              através de um plano de assistência mensal
                         </p>
                         <button>saiba mais</button>
                     </div>
@@ -108,15 +144,15 @@
             </div>
             <div class="services-card ">
                 <div class="services-img">
-                    <img src="/public/img/tetst.avif" alt="">
+                    <img src="tetst.avif" alt="">
                 </div>
                 <div class="services-contentet">
                 <div>
-                    <h2>celularrr</h2>
-                    <p>Na nossa assistência técnica, transformamos problemas
-                        em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
-                        em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
-                        em soluções, garantindo que cada dispositivo funcione como novo. Sua tecnologia
+                    <h2>SERVIÇOS CORPORATIVOS</h2>
+                    <p>
+                        Um pacote de serviços preventivos, que visa reduzir o
+                             valor gasto pelos clientes com manutenções corretivas,
+                              através de um plano de assistência mensal
                     </p>
                     <button>saiba mais</button>
                 </div>
@@ -152,17 +188,17 @@
                         <input type="text" placeholder="assunto">
                     </div>
                     <textarea name="" placeholder="digite sua mensagem..."></textarea>
-                    <button>klds</button>
+                    <button>Enviar <i class="fa-regular fa-paper-plane"></i></button>
                 </div>
                 
             </form>
         </div>
         
-            <div class="contato-rede">
-                <div class="contato-email"></div>
-                <div class="contato-whatsap"></div>
-                <div class="contato-insta"></div>
-                <div class="contato-insta"></div>
+            <div  class="contato-rede">
+                <div class="contato-email  ctt" data-tilt><i class="fa-regular fa-envelope "></i></div>
+                <div class="contato-whatsapp ctt"data-tilt><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="contato-maps ctt"data-tilt><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contato-insta ctt"data-tilt><i class="fa-brands fa-instagram"></i></div>
             </div>
         
         
@@ -210,18 +246,22 @@
   </footer>
   <div class="roda-pe">
     <div class="rdp-txt">
-        <p style="color: aliceblue;">&copy; etec primeiro modulo-todos os direitos reservados</p>
+        <p style="color: aliceblue;">&copy; 1ds-todos os direitos reservados</p>
     </div>
-    <div class="rdp-btn">
+    <!-- <div class="rdp-btn">
         <button><a href=""><i class="fa-solid fa-arrow-up"></i></a></button>
-    </div>
+    </div> -->
   </div>
 
 
 
     
    
-
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
     <script src="index.js">
 

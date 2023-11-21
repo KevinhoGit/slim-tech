@@ -137,17 +137,19 @@ section
 {
     display: flex;
     align-items: center;
+    
 }
 
 .home-conteudo h1
 {
     font-size: 5.6rem;
     font-weight: 700;
+    text-transform: uppercase;
 
 }
 .home-conteudo p
 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 .home-conteudo .box-btn
 {
@@ -210,8 +212,17 @@ section
 }
 .faixa-conteudo h3
 {
-    max-width: 100px;
+    max-width: 200px;
     margin-left: 3.5rem;
+    
+}
+.faixa-conteudo h3
+{
+    font-size: 1.5rem;
+    font-family: 'DM Sans';
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: var(--text-color);
     
 }
 .faixa svg
@@ -219,6 +230,7 @@ section
     width: 45px;
     
 }
+
 
 /*servicos*/
 .services
@@ -249,8 +261,8 @@ section
    
     height: 400px;
     background-color: var(--withe-color);
-    border-radius: 20px;
-   border-bottom: solid 5px var(--hover-color);
+    border-radius: 10px;
+   border-bottom: solid 10px var(--hover-color);
     transition: 0.9s;
     
 }
@@ -259,10 +271,10 @@ section
 
     position: absolute;
     margin-top: 20px;
-    width: 250px;
+    width: 240px;
     height: 200px;
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.9s;
     
 }
@@ -277,7 +289,7 @@ section
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
     border: solid 0px var(--hover-color);
 }
 
@@ -290,18 +302,24 @@ section
     box-shadow: 0 15px 45px rgb(0, 0, 0);
     
 }
+.txt-1{
+    margin-bottom: 95px;
+}
 
 .heading
 {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     font-family: 'DM Sans';
+    padding-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
     
 }
 
-.services h1
+.services-contentet h2
 {
-    padding-bottom: 13rem;
-    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
 }
 
 .services-contentet
@@ -326,7 +344,10 @@ section
 }
 .services-contentet p
 {
-    line-height: 1.5;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #000;
 }
 .services-contentet p
 {
@@ -334,14 +355,14 @@ section
 }
 .services-contentet button
 {
-    border: solid 2px var(--hover-color);
-    background-color: transparent;
-    color: #000;
+    
+    color: var(--withe-color);
+    margin-top: 1.5rem;
+    transition: 0.6s;
 }
 .services-contentet button:hover
 {
-    background-color: var(--hover-color);
-    color: var(--text-color);
+    
 }
 /* .services-contentet button
 {
@@ -360,11 +381,7 @@ section
 /* contato */
 
 
-.contato h2
-{
-    margin-bottom: 3rem;
-    text-align: center ;
-} 
+
 .contato form
 {
     width: 70rem;
@@ -375,9 +392,11 @@ section
 .input-box
 {
     display: flex;
+    gap: 0 10px;
 
     
 }
+
 .contato form .input-box input,
 .contato form textarea
 {
@@ -388,9 +407,12 @@ section
     background: transparent;
     margin: 2rem 0 ;
     border: none;
-    border-bottom: solid 2px #0994CF;
+     border-bottom: solid 2px var(--bdr-color);
+    
 
 }
+
+
 .contato-container
 {
     text-align: center;
@@ -417,6 +439,16 @@ section
     flex-wrap: wrap;
     gap: 2rem;
 }
+.contato-rede div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contato-rede div i
+{
+    font-size: 5rem;
+}
 .contato-whatsapp-content p
 {
     color: #ffffff;
@@ -426,20 +458,21 @@ section
     width: 100px;
     border-radius: 10px;
     border: solid 2px var(--hover-color);
+    box-shadow: 0rem 0rem 2.5rem rgba(6,247,132,.16);
     cursor: pointer;
     height: 100px;
     background-color: transparent;
 }
 .contato button
 {
-    margin: 0 .7rem;
-    background-color: transparent;
+    
+   margin-top: 3rem;
     border: solid 2px var(--hover-color);
 }
-.contato button:hover
+.contato button i
 {
-   background-color: var(--hover-color);
-}                     
+    margin-left: 5px;
+}
 textarea
 {
     resize: none;
@@ -469,7 +502,10 @@ ul{
 {
  flex: 1 1 1;
 }
-
+.footer h4 a
+{
+    font-family: 'DM Sans';
+}
 
 .footer-col h4{
 	font-size: 18px;
@@ -543,7 +579,7 @@ ul{
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--faixa--color);
 }
 .rdp-btn button
@@ -558,5 +594,104 @@ ul{
 
 
 /* responsividade geral, menu, home... */
+@media (max-width:1320px)
+{
+    .faixa
+    {
+        display: none;
+    }
+}
+@media (max-width: 991px)
+{
+   .header 
+   {
+    padding: 0 3%;
+   }
+   section
+   {
+    padding: 10rem 3% 2rem;
+   }
+}
+@media (max-width: 769px)
+{
+    .contato-rede div 
+    {
+        box-shadow: 0rem 0rem 1rem rgba(6,247,132,.16);
+    }
+    .faixa
+    {
+        display: none;
+    }
+   #menu-icone
+   {
+    display: block;
+   }
+   .header , .navegacao
+   {
+    background-color: var(--faixa--color);
+   }
+
+   .navegacao
+   {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem 3%;
+    
+    display: none;
+   }
+   .navegacao.ativa 
+   {
+    display: block;
+   }
+   .navegacao a 
+   {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+   }
+   .header button 
+   {
+    display: none;
+   }
+   .nav-contatos
+   {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+   }
+   /* home */
+
+   .home
+   {
+    flex-direction: column;
+   }
+   .home-conteudo h1 
+   {
+    font-size: 4.1rem;
+   }
+   .home-conteudo p
+   {
+    font-size: 1.5rem;
+   }
+   .home-img img 
+   {
+    width: 30vh;
+    margin-top: 4rem;
+   }
+   .home-conteudo
+   {
+    text-align: center;
+    margin: 0 auto;
+   }
 
 
+   /* contato */
+   .input-box
+   {
+    flex-direction: column;
+   }
+}

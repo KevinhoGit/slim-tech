@@ -8,7 +8,7 @@ window.addEventListener('scroll', ()=>
     if(currentScroll > lastScroll)
     {
         header.classList.remove('sty')
-    }
+    }    
     if(currentScroll == lastScroll)
     {
         header.classList.add('sty')
