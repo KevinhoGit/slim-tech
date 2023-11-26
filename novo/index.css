@@ -17,7 +17,7 @@
     color: var(--text-color);
     list-style: none;
     
-    
+    object-fit: cover; 
 }
 
 :root
@@ -32,15 +32,52 @@
     --faixa--color:#1F1F1F;;
 
 }
+
+/* ::-webkit-scrollbar
+{
+    width: 10px;
+    border-radius: 0px;
+    background-color: var(--bdr-color);
+   )
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 0;
+    background-color: #000000;
+    
+} */
+header button:hover
+{
+    transform: translate(5px);
+    
+}
+/* button desativa boxshadow */
+.sobre button, header button, .contato button, .home button
+{
+    box-shadow: none;
+}
  /*butao padrao*/button
 {
     
-    width: 149px;
-    height: 29px;
+    width: 195px;
+    height: 49px;
     background-color: var(--hover-color);  
     border-radius: 8px;
     cursor: pointer;
-        
+    text-transform: capitalize;
+    transition: 0.9s linear;
+    transition-timing-function: linear;
+    
+    
+    box-shadow: rgba(138, 123, 123, 0.555) 0px 8px 24px;
+    
+    
+}
+button:hover
+{
+    transform: scale(1.04);
+    transition: 1s linear;
+    
     
 }
 html
@@ -56,12 +93,21 @@ body
 
 
 /* menus responsivo*/
+.desa
+{
+    display: none;
+}
 #menu-icone
 {
     font-size: 3.6rem;
     display: none;
 }
 /*navegacao*/
+nav a:hover,
+nav a.active {
+    color: #0994CF;
+}
+
 .header
 {
     z-index: 1;
@@ -90,6 +136,14 @@ body
 .logo img
 {
     height: 50px;
+}
+.nvr-box
+{
+    display: none;
+}
+iframe
+{
+    display: none;
 }
 .navegacao a 
 {
@@ -123,7 +177,7 @@ header button:hover
 
 section
 {
-    min-height: 100vh;
+    min-height: 100lvh;
     padding: 10rem 10% 2rem;
 
 }
@@ -171,12 +225,7 @@ section
     background-color: var(--hover-color);
 
 }
-.home-btn .vazio:hover
-{
-    background-color:transparent;
-    border: solid 2px var(--hover-color);
 
-}
 
 .home-img img
 {
@@ -184,7 +233,6 @@ section
     width: 250px;
     
 }
-
 
 /*faixa*/
 
@@ -220,6 +268,7 @@ section
 {
     font-size: 1.5rem;
     font-family: 'DM Sans';
+    font-weight: 200;
     letter-spacing: 0.7px;
     text-transform: uppercase;
     color: var(--text-color);
@@ -230,6 +279,119 @@ section
     width: 45px;
     
 }
+/* sobre */
+
+.sobre
+{
+    display: flex;
+    align-items: center;
+    min-height: 0;
+    height: auto;
+   
+    
+}
+.sobre-bx
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+   
+}
+.sobre-pontos
+{
+    height: 120px;
+    width: 120px;
+     
+    background-color: var(--faixa--color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.sobre-pontos i
+{
+    font-size: 3rem;
+    color: var(--bnt-color);
+}
+.sobre-pontos h3
+{
+    text-transform: uppercase;
+    margin-top: 1.6rem;
+    font-weight: 400;
+    font-family: "DM Sans";
+}
+p 
+{
+    font-weight: 300;
+}
+.sobre-txt
+{
+    margin-top: 0;
+}
+.sobre-pontos p 
+{
+  
+    color: var(--withe-color);
+    margin-top: .3rem;
+    font-size: 1.3rem;
+    
+}
+.sobre-txt
+{
+    font-family: "DM Sans";
+    margin-top: 2rem;
+    font-weight: 250;
+     font-size: 1.5rem;
+     color: var(--txt_faixa-color);
+     line-height: 1.2;
+}
+.sobre-btn
+{
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.sobre-box
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 5rem;
+}
+.sobre-img
+{
+    flex-basis: 40%;
+}
+
+.sobre-img img
+{
+    
+    width: 100%;
+    height:420px;
+    border-radius: 10px;
+}
+.sobre-content
+{
+    flex-basis: 40%;
+
+}
+.sobre-content h2
+{
+    font-family: 'DM Sans';
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    
+}
+
+
+
+
 
 
 /*servicos*/
@@ -310,7 +472,8 @@ section
 {
     font-size: 4.2rem;
     font-family: 'DM Sans';
-    padding-bottom: 2rem;
+    padding-bottom: 3.5rem;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     
@@ -346,7 +509,7 @@ section
 {
     line-height: 1.2;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #000;
 }
 .services-contentet p
@@ -448,6 +611,7 @@ section
 .contato-rede div i
 {
     font-size: 5rem;
+    color: #ffffff;
 }
 .contato-whatsapp-content p
 {
@@ -457,11 +621,12 @@ section
 {
     width: 100px;
     border-radius: 10px;
-    border: solid 2px var(--hover-color);
-    box-shadow: 0rem 0rem 2.5rem rgba(6,247,132,.16);
+  
+    background-color: var(--bdr-color);
+    box-shadow: 0rem 0rem 1rem rgba(6,247,132,.16);
     cursor: pointer;
     height: 100px;
-    background-color: transparent;
+    
 }
 .contato button
 {
@@ -472,6 +637,7 @@ section
 .contato button i
 {
     margin-left: 5px;
+    
 }
 textarea
 {
@@ -481,6 +647,7 @@ textarea
 
 
 /* footer */
+
 .footer{
 	
     padding: 100px 10%;
@@ -490,8 +657,10 @@ textarea
 	
 	flex-wrap: wrap;
     display: flex;
-    background-color: #000000;
+
     justify-content: space-between;
+    padding: 30px 0;
+
 
     
 }
@@ -552,7 +721,7 @@ ul{
 	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
-	transition: all 0.5s ease;
+	transition: all 0.9s ease;
 }
 .footer-col .social-links a:hover{
 	color: #24262b;
@@ -577,9 +746,9 @@ ul{
     padding: 0 10%;
     width: 100%;
     height: 50px;
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--faixa--color);
 }
 .rdp-btn button
@@ -589,6 +758,8 @@ ul{
 .rdp-txt p
 {
     font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--txt_faixa-color)
 }
 
 
@@ -603,7 +774,7 @@ ul{
 }
 @media (max-width: 991px)
 {
-   .header 
+   .header, .roda-pe, .footer
    {
     padding: 0 3%;
    }
@@ -612,11 +783,44 @@ ul{
     padding: 10rem 3% 2rem;
    }
 }
-@media (max-width: 769px)
+
+@media (max-width: 900px)
 {
+    
+
+
+    iframe
+    {
+        display: block;
+        width: 100%;
+        height: 180px;
+        filter: invert(100%);
+        border-radius: 10px;
+    }
+    
+    .nvr-box i 
+    {
+        
+    }
+    .nvr-box
+    {
+        display: flex;
+        font-size: 3rem;
+        gap: 3rem;
+        
+    }
+    .desa
+    {
+        display: block;
+       width: 149px;
+       height: 29px;
+       border-radius: 10px;
+       background-color: var(--bnt-color);
+       
+    }
     .contato-rede div 
     {
-        box-shadow: 0rem 0rem 1rem rgba(6,247,132,.16);
+        box-shadow: 0rem 0rem 0.5rem rgba(6,247,132,.16);
     }
     .faixa
     {
@@ -636,10 +840,9 @@ ul{
     position: absolute;
     top: 100%;
     left: 0;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     padding: 1rem 3%;
-    
     display: none;
    }
    .navegacao.ativa 
@@ -694,4 +897,96 @@ ul{
    {
     flex-direction: column;
    }
+   
+    
+    .sobre-bx
+    {
+        
+        gap: 0rem;
+    }
+    
+    
+
+
+   
+}
+@media (min-width: 1278px)
+{
+
+.sobre-img img 
+{
+    transition: linear 1.1s;
+}
+.sobre-img
+{
+    
+    width: 100%;
+    height:420px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sobre-img:hover img
+{
+    transform: scale(1.2);
+    transition: all 1.1s linear;
+}
+}
+@media (max-width: 1278px)
+{
+        .sobre-img
+    {
+        flex-basis: 30%;
+        cursor: pointer;
+    }
+
+    .sobre-btn
+    {
+    display: flex;
+     justify-content: center;
+    }
+    .sobre-content p
+    {
+        text-align: center;
+    }
+    .sobre-bx
+    {
+        display: none;
+
+    }
+    .sobre p 
+    {
+        margin-top: 0;
+    }
+    .sobre-img img
+    {
+        height: 340px;
+    }
+    .sobre-content
+    {
+        flex-basis: 100%;
+
+    }
+    .sobre-img
+    {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .sobre-img img
+    {
+        height: 250px;
+    }
+    .heading
+    {
+        font-size: 3.2rem;
+        
+        
+    }
+    .rdp-txt p
+    {
+        font-size: 1.2rem;
+    }
 }
